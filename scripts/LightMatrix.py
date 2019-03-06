@@ -39,10 +39,3 @@ def clear():
     sense.clear()
 
 sense = SenseHat()
-
-clear()
-
-threading.Thread(target=left(0, 255, 0)).start()
-threading.Thread(target=right(0, 255 ,0)).start()
-threading.Thread(target=forward(0, 0, 255)).start()
-threading.Thread(target=reverse(255, 0, 0)).start()
