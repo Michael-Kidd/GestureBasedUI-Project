@@ -14,6 +14,10 @@ def onPoseEdge(p):
 		print("Drive")
 	if p == p.WAVE_OUT:
 		print("Reverse")
+	if myo.getBox() == 7:
+		print("Left")
+	if myo.getBox() == 3:
+		print("Right")
 
 
 if __name__ == '__main__':
