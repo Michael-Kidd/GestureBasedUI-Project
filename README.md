@@ -1,7 +1,7 @@
 # Gesture Based UI Project
 <p>Authors: Michael Kidd & Kevin Moran<br>
 Lecturer: Damien Costello</p>
-
+Test Commit
 ### Project Requirements
 <hr/>
 Due Date: 12th April 2019 (or earlier is acceptable)
@@ -34,6 +34,7 @@ You don’t have to solve the world economic crisis just yet.  Gestures identifi
 ### Project Overview
 <hr/>
 
+
 We have decided to Attempt to control a robotic car with a Myo Armband, this would allow a person to use hard and arm gestures to control a remote vehicle.
 
 For the Project we will need a small vehicle that can connect in some manner to a mini programmable computer such as the raspberry pi.
@@ -60,7 +61,7 @@ Project Demonstration - Finished Project
 Other Video
 [![Youtube Video](https://static-news.moneycontrol.com/static-mcnews/2018/09/youtube-770x433.jpg)](http://example.net/)
 
-#### Hardware UsedMyo
+#### Hardware Used
 
 ###### Raspberry Pi
 ![Pi](https://images-na.ssl-images-amazon.com/images/I/91zSu44%2B34L._SX466_.jpg)
