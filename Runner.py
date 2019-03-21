@@ -15,11 +15,14 @@ def onPoseEdge(p):
 
 	if p == p.REST:
 		myo.rotSetCenter()
+		print("MYo Connected")
 	if p == p.FIST:
 		if myo.getBox() == 7:
 			myo.vibrate(3)
+			print("MYo Left?")
 		elif myo.getBox() == 3:
 			myo.vibrate(4)
+			print("MYo Right?")
 		else:
 			myo.vibrate(2)
 	if p == p.WAVE_OUT:
@@ -30,6 +33,7 @@ if __name__ == '__main__':
 
 	# Connect the myo armband
 	myo = Myo(sys.argv[1] if len(sys.argv) >= 2 else None) 
+	print("MYo Connect")
 	myo.connect()
 
 	# arm handler, left and right arms
