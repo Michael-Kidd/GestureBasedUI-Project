@@ -113,6 +113,10 @@ With BalenaEtcher you can flash an OS straight to an external drive, in our case
 #### Interface for Light Matrix on Sense Hat
 
 #### Issues that occured during the project
+##  Adding Atom to the rasperry pi. 
+We decided to use atom as a compiler due to its ability to code together. It does have windows and linux support. But due to the fact that our pi is using a armhf and the linux support is only for amd64 architecture. We were unable to install it on the pi. Here is a link to a github account thaat is trying to create a runnable build for arm it unfortunatley doesnt yet have a pi buildable. [Atom for ARM] https://github.com/atom/atom/issues/15881
+
+
 <hr/>
 
 ### Research
