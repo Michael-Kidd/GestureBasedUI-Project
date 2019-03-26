@@ -120,6 +120,13 @@ With BalenaEtcher you can flash an OS straight to an external drive, in our case
 #### Myo Armband
 ![Myo](https://images.techhive.com/images/article/2015/06/thalmic-labs-myo-armband-100590953-primary.idge.jpg)
 
+### Installing Myo Armband On Windows
+First you will need to download the Myo Installed from the Myo install page [Here](https://support.getmyo.com/hc/en-us/articles/360018409792) 
+![MyoInstallPage](https://user-images.githubusercontent.com/22493191/54996439-37811680-4fc1-11e9-8041-bdcce471abb8.png)
+Then click on Myo Connect for Windows 1.0.1 after it downloads. Double click on the file. Agree to the license agreement and then choose where to install. The default location is okay to use (it will require 137.3mb of free space). Wait for it to install. Make sure that launch Myo Connect is ticked. Then click on finish. You should then see this screen. 
+![MyoArmbandManger](https://user-images.githubusercontent.com/22493191/54997131-effb8a00-4fc2-11e9-994e-71f5cf0addaa.png) 
+If you dont or see that Myo is diconnected make sure the bluetooth dongle is plugged in to a powered usb port. Then tap the logo of the myo armband against the dongle and it should start connecting. When connected you can ping the device and you should feel it vibrate to know its connected. 
+
 **Sensors** 	
 
 * Medical grade stainless steel EMG sensors
