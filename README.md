@@ -113,6 +113,10 @@ With BalenaEtcher you can flash an OS straight to an external drive, in our case
 #### Interface for Light Matrix on Sense Hat
 
 #### Issues that occured during the project
+#####  Adding Atom to the rasperry pi. 
+We decided to use atom as a compiler due to its ability to code together. It does have windows and linux support. But due to the fact that our pi is using a armhf and the linux support is only for amd64 architecture. We were unable to install it on the pi. Here is a link to a github account thaat is trying to create a runnable build for arm it unfortunatley doesnt yet have a pi buildable. [Atom for ARM] https://github.com/atom/atom/issues/15881
+
+
 <hr/>
 
 ### Research
@@ -120,7 +124,7 @@ With BalenaEtcher you can flash an OS straight to an external drive, in our case
 #### Myo Armband
 ![Myo](https://images.techhive.com/images/article/2015/06/thalmic-labs-myo-armband-100590953-primary.idge.jpg)
 
-### Installing Myo Armband On Windows
+##### Installing Myo Armband On Windows
 First you will need to download the Myo Installed from the Myo install page [Here](https://support.getmyo.com/hc/en-us/articles/360018409792) 
 ![MyoInstallPage](https://user-images.githubusercontent.com/22493191/54996439-37811680-4fc1-11e9-8041-bdcce471abb8.png)
 Then click on Myo Connect for Windows 1.0.1 after it downloads. Double click on the file. Agree to the license agreement and then choose where to install. The default location is okay to use (it will require 137.3mb of free space). Wait for it to install. Make sure that launch Myo Connect is ticked. Then click on finish. You should then see this screen. 
