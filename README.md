@@ -13,7 +13,7 @@ At the very least, this should be a local implementation of the application usin
 ### Project Overview
 <hr/>
 
-We have decided to Attempt to control a robotic car with a Myo Armband, this would allow a person to use hard and arm gestures to control a remote vehicle.
+We have decided to attempt to control a robotic car with a Myo Armband, this would allow a person to use hard and arm gestures to control a remote vehicle.
 
 For the Project we will need a small vehicle that can connect in some manner to a mini programmable computer such as the raspberry pi.
 The vehicle will need to have DC motors and if possible 4 or more wheels, which can be rotated from those motors.
@@ -71,11 +71,18 @@ To get started, you will need a Raspberry pi running some form of Operating Syst
 Download Raspbian OS
 [Here](https://www.raspberrypi.org/downloads/raspbian/)
 
-Once you have Raspbian Downloaded, You will need to install it to a micro SD card that can be inserted into the raspberry pi. To do this with windows I used a program called BelenaEtcher, this can also be used with a Linux OS.
+Once you have Raspbian Downloaded, You will need to install it to a micro SD card that can be inserted into the raspberry pi. To do this with windows I used a program called BalenaEtcher, this can also be used with a Linux OS.
+
+#### Installing BalenaEtcher on Windows
+
+
 
 Download BalenaEtcher [Here](https://www.balena.io/etcher/)
 
 With BalenaEtcher you can flash an OS straight to an external drive, in our case we used a micro SD that came with the Raspberry Pi.
+
+#### Installing Raspbian on to MicroSD
+
 
 
 #### Setting up Myo with Raspberry Pi
@@ -84,22 +91,23 @@ With BalenaEtcher you can flash an OS straight to an external drive, in our case
 
 #### Wiring the Car to work with Pi
 
-#### Interface to Operate the Car
-
 #### Interface for Light Matrix on Sense Hat
 
-During the project we started by using a sense hat for the raspberry pi which has a 8x8 light matrix.
+During the project we started by using a sense hat for the raspberry pi which has a 8x8 light matrix. This would show an arrow on the matrix to indicate which gesture the wearer of the Armband was trying to activate.  Example we had the left arrow show when the wearer activate the left gesture. One problem here was that neither motor controller we were using would be replacing the sense hat as there was no way to attach it to the unit while the motor controllers were also attached without adding an adapter of some sort.
 
 #### Issues that occurred during the project
 
+#####  Purchased the incorrect motor controller.
+
+During the project we needed to purchase a motor controller that could run the motors on the vehicle, unfortunately we bought a stepper motor which is more suited to operating motors that operate in phases, such as a walking mechanism or 3d printed that much switch between going forwards and backwards quickly. This did not work with our car as the motors were straight forward DC motors, so hopefully the new motor controller will work. We decide against this project as we are currently working on another project that is using the oculus rift and have only one unit, takes a lot to setup the equipment each time. Can be disorienting over long periods of time, can often become distracting and prevent actual work being done.
+
 #####  Using the light matrix with raspberry pi.
 
-* We originally were using the light matrix on the raspberry pi as a testing tool, in place of using the actual vehicle. This worked but later the sense hat stopped responding and was no longer seen by the program.
+We originally were using the light matrix on the raspberry pi as a testing tool, in place of using the actual vehicle. This worked but later the sense hat stopped responding and was no longer seen by the program.
 This may be due to some firmware change, or potentially due to a short in device itself. After looking online for similar issues, there is a possible fix for this issue that resets the EPROM on the chip. As we wont be using this within the final project and the light matrix cannot be affixed to the top of the motor controller, since there are no pins in place to addon hats, we stopped trying to fix the issue.
 
 #####  Adding Atom to the raspberry pi.
 We decided to use atom as a compiler due to its ability to code together. It does have windows and Linux support. But due to the fact that our pi is using a arm CPU and the Linux support is only for amd64 architecture. We were unable to install it on the pi. Here is a link to a GitHub account that is trying to create a runnable build for arm it unfortunately doesn't yet have a pi buildable. [Atom for ARM] https://github.com/atom/atom/issues/15881
-
 
 <hr/>
 
@@ -176,6 +184,7 @@ Kinect 2 specs
 **Tilt Motor:** No tilt motor
 
 ##### Potential Kinect and Kinect 2 Project
+We looked at using the Kinect as a game controller. The idea was as a controller for an endless runner similar to [this](https://github.com/KatVHarris/GravityInfiniteRunnerUnity5). We decided against it in the end due to the amount of  versions of this that we saw had already being created online.
 
 #### PlayStation Move motion controller
 ![PSMove](https://a1.amlimg.com/YTE2NjIxMmY4NmFmODc5ZGFhNTU5YmU1ZjRkYWM5MmahFiLVOp7WOJ1JtiqNVPzRaHR0cDovL21lZGlhLmFkc2ltZy5jb20vODg2ZTJlMjI2ZDFmZmZkMGY5M2U1NmYwNTkyMTFkNTE5MTdiODkxY2IyN2RjOGU4OTczMGU1NzVkNjBkODdiMi5qcGd8fHx8fHwzOTZ4MjkyfGh0dHA6Ly93d3cuYWR2ZXJ0cy5pZS9zdGF0aWMvaS93YXRlcm1hcmsucG5nfHx8.jpg)<br/>
@@ -199,7 +208,7 @@ Echo cancellation<br/>
 Background noise suppression<br/>
 
 ##### Potential Playstation Moves Projects
-
+We could not compose of an idea that would truly be gesture based due to the need to use the move controllers to interact with the PlayStation. We could have used the PlayStation Camera but we didn't have access to one and it would have being largely similar to any project we could build on the Kinect.  
 
 ##### Leap motion
 ![Leap Motion](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=http%3A%2F%2Fi.nextmedia.com.au%2FNews%2Fleap-motion-review.jpg&w=600&c=0&s=1)
@@ -211,6 +220,7 @@ Background noise suppression<br/>
 
 ##### Potential Leap Projects
 
+One potential project we thought of for the leap motion controller was to interface hand gestures for virtual reality games such as Elite Dangerous, which is a space flight simulator. This game currently uses physical flight controller. Using the leap motion could allow players flight the ship without any controllers and would give a more natural experience.
 
 #### Microsoft HoloLens
 ![Hololens](https://cdn-images-1.medium.com/max/1600/1*Oltg1ajoJ1Xbs2fK0N644g.jpeg)
@@ -267,8 +277,6 @@ Automatic pupillary distance calibration
 
 ##### Potential HoloLens Projects
 
-###### Fishing Tutorial Aid
-
 Fishing training program with HoloLens
 
 Last year as part of a college assignment, I took part in a project to create a UWP program that could be used as a training tool to teach someone how to fly fish by using a fly fishing rod that would have an accelerometer attached to the top of the rod and a raspberry pi attached to the handle of the rod. This would allow the Pi to retrieve the data from the accelerometer and send it over a network and could be visualized in the HoloLens. This would allow the teacher to adapt the training style in a more appropriate way to help the student. the project worked somewhat. The Pi retrieved the data and sent over the network and could be seen in a unity program that could be run in any unity compatible device as long as a compiled build was created. This could be adapted to the HoloLens as a gesture recognition project, where in place of an entire rod, Raspberry pi and accelerometer, the HoloLens could extrapolate the data from the movement that user makes, possibly even go further and monitor the users entire body. This would definitely be a better way to implement that project as there would be less hardware involved and could allow for video playback through the HoloLens cameras. This project could also be done in parts using the Kinect or the leap motion, however it would seem to be a better fit for the HoloLens as the current features of the program also could be implemented.
@@ -277,4 +285,5 @@ The reason we haven't chosen this project is due to the level of complexity bein
 
 
 ### References
+[Endless Runner Kinect](https://github.com/KatVHarris/GravityInfiniteRunnerUnity5)
 [Titled IoT-Based Fall Detection for Smart Home Environments](https://www.researchgate.net/publication/312962914_IoT-Based_Fall_Detection_for_Smart_Home_Environments)
