@@ -1,6 +1,7 @@
 Tutorial# Gesture Based UI Project
 <p>Authors: Michael Kidd & Kevin Moran <br>
 Lecturer: Damien Costello</p>
+Hardware: 4Tronix Initio Car, Myo Armband, Raspberry Pi
 
 ### Project Requirements
 <hr/>
@@ -20,7 +21,7 @@ The vehicle will need to have DC motors and if possible 4 or more wheels, which 
 
 We will be using a raspberry pi with an external power source, such as the batteries attached to the car or another external power pack designed to be used for phones with a micro USB port.
 
-On the Raspberry Pi we will install the Raspbian Operating system, Previously I have used a Raspberry Pi with the windows IOT operating system, but found that the Pi struggle somewhat with processing.
+On the Raspberry Pi we will install the Raspbian Operating system, previously I have used a Raspberry Pi with the windows IOT operating system, but found that the Pi struggle somewhat with processing.
 
 Raspbian will allow us to use Python as a programming language and unlike the windows version, can come with a full desktop GUI install.
 
@@ -285,5 +286,5 @@ The reason we haven't chosen this project is due to the level of complexity bein
 
 
 ### References
-[Endless Runner Kinect](https://github.com/KatVHarris/GravityInfiniteRunnerUnity5)
-[Titled IoT-Based Fall Detection for Smart Home Environments](https://www.researchgate.net/publication/312962914_IoT-Based_Fall_Detection_for_Smart_Home_Environments)
+[Endless Runner Kinect](https://github.com/KatVHarris/GravityInfiniteRunnerUnity5)<br>
+[Titled IoT-Based Fall Detection for Smart Home Environments](https://www.researchgate.net/publication/312962914_IoT-Based_Fall_Detection_for_Smart_Home_Environments)<br>
