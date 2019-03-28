@@ -1,4 +1,4 @@
-Tutorial# Gesture Based UI Project
+# Gesture Based UI Project
 <p>Authors: Michael Kidd & Kevin Moran <br>
 Lecturer: Damien Costello</p>
 Hardware: 4Tronix Initio Car, Myo Armband, Raspberry Pi
@@ -40,27 +40,6 @@ Project Demonstration - Finished Project
 Other Video
 [![Youtube Video](https://static-news.moneycontrol.com/static-mcnews/2018/09/youtube-770x433.jpg)](http://example.net/)
 
-#### Hardware Used
-
-###### Raspberry Pi
-![Pi](https://images-na.ssl-images-amazon.com/images/I/91zSu44%2B34L._SX466_.jpg)
-
-###### Myo Armband
-![Myo](https://images.techhive.com/images/article/2015/06/thalmic-labs-myo-armband-100590953-primary.idge.jpg)
-
-**Sensors** 	
-
-* Medical grade stainless steel EMG sensors
-* Highly sensitive nine-axis IMU containing three-axis gyroscope, three-axis accelerometer, three-axis magnetometer.
-
-* **LEDs** 	- Dual indicator LEDs
-* **Processor** -	ARM Cortex M4 processor
-
-* **Haptic Feedback** -	Short, medium, long vibrations
-
-
-###### 4Tronix Initio Car
-![Car](https://cdn.shopify.com/s/files/1/0271/0223/products/initio_03b_1024x1024.jpg?v=1502448974v=200x)
 
 <hr/>
 
@@ -108,7 +87,7 @@ We originally were using the light matrix on the raspberry pi as a testing tool,
 This may be due to some firmware change, or potentially due to a short in device itself. After looking online for similar issues, there is a possible fix for this issue that resets the EPROM on the chip. As we wont be using this within the final project and the light matrix cannot be affixed to the top of the motor controller, since there are no pins in place to addon hats, we stopped trying to fix the issue.
 
 #####  Adding Atom to the raspberry pi.
-We decided to use atom as a compiler due to its ability to code together. It does have windows and Linux support. But due to the fact that our pi is using a arm CPU and the Linux support is only for amd64 architecture. We were unable to install it on the pi. Here is a link to a GitHub account that is trying to create a runnable build for arm it unfortunately doesn't yet have a pi buildable. [Atom for ARM] https://github.com/atom/atom/issues/15881
+We decided to use atom as a compiler due to its ability to code together. It does have windows and Linux support. But due to the fact that our pi is using a arm CPU and the Linux support is only for amd64 architecture. We were unable to install it on the pi. Here is a link to a GitHub account that is trying to create a runnable build for arm it unfortunately doesn't yet have a pi buildable. [Atom for ARM](https://github.com/atom/atom/issues/15881)
 
 <hr/>
 
