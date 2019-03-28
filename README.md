@@ -82,7 +82,7 @@ Other Video
 
 
 ###### 4Tronix Initio Car
-![Car](https://cdn.shopify.com/s/files/1/0271/0223/products/initio_03b_1024x1024.jpg?v=1502448974 v =200x)
+![Car](https://cdn.shopify.com/s/files/1/0271/0223/products/initio_03b_1024x1024.jpg?v=1502448974v=200x)
 
 <hr/>
 
