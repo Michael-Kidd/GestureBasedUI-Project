@@ -1,8 +1,7 @@
-# Gesture Based UI Project
-<p>Authors: Michael Kidd & Kevin Moran<br>
+Tutorial# Gesture Based UI Project
+<p>Authors: Michael Kidd & Kevin Moran <br>
 Lecturer: Damien Costello</p>
-Test Commit
-Test Edit Number 2
+
 ### Project Requirements
 <hr/>
 Due Date: 12th April 2019 (or earlier is acceptable)
@@ -11,30 +10,8 @@ Develop an application with a Natural User Interface.  There are a number of opt
 
 At the very least, this should be a local implementation of the application using gestures to interact with it.  For example, a voice controlled application fits the parameters of gesture based control. You can expand out to include real-world hardware and use this as an opportunity to prove a concept.  The Internet of Things is a common phrase, so you could implement a solution taking advantage of hardware like the Raspberry Pi, using the cloud for data transfer and creating a real-world scenario through this medium.
 
-  You can reproduce a classic game or system using a gesture-based interface.  For example, a platformer game or a navigation application using Kinect or voice control.  Maybe Tetris using the Myo armbands to control the blocks, or Flappy Bird using the Kinect as the controller.  Applications with multiple users are also acceptable. Voice control applications need to be more complex and achieve something.  Creating a skill in Alexa for the sake of creating a skill is not enough.  You need to take the application further than this.  You could, for example, implement a simple learning mechanism that will build a conversational skill as time progresses and demonstrate this.  You could use the voice control to progress through a game or achieve a task.  If you are doing this, then you need to distinguish the code you write from the samples available. The programming language is your choice.
-
-#### Hardware available
-  * (9) Myo Armbands
-  * (2) Leap Motion Controllers,
-  * (2) Kinect V2,
-  * (2) HoloLens,
-  * (6) Durovis Dive which are similar to Google Cardboard
-  * Raspberry Pi, Arduino,
-  * Lego Mindstorms
-
-
-#### Requirements
-Write up the project under the following headings including all references as evidence of your research. Purpose of the application–design of the application including the screens of the user interface and how it works.  The application can be an experimentation process for you, testing how pieces of hardware could interact or be combined with gestures.  
-
-You don’t have to solve the world economic crisis just yet.  Gestures identified as appropriate for this application–consider how gestures can be incorporated into the application, providing a justification for the ones that you pick.
-
- This is an important research element for the project and needs to explain how the gestures fit into the solution you are creating. Hardware used in creating the application–You are not limited to the hardware listed above.  If you have your own hardware, or hardware simulator that you wish to use, then feel free.  The purpose of each piece of hardware should be given with a comparison to other options available. Architecture for the solution–the full architecture for the solution, including the class diagrams, any data models, communications and distributed elements that you are creating.
-
- The architecture must make sense when the gestures and the hardware are combined. Justification is necessary in the documentation for this. You need to include a list of relevant libraries that you used in the project. Conclusions & Recommendations–Conclusions are what you have learned from this project and the associated research.  Recommendations are what you would do differently if you were to undertake the project again.  The Reflective Piece–what I learned and “enjoyed”! This gives scope for a critical evaluation of the project and the objective that you tried to achieve
-
 ### Project Overview
 <hr/>
-
 
 We have decided to Attempt to control a robotic car with a Myo Armband, this would allow a person to use hard and arm gestures to control a remote vehicle.
 
@@ -101,7 +78,6 @@ Download BalenaEtcher [Here](https://www.balena.io/etcher/)
 With BalenaEtcher you can flash an OS straight to an external drive, in our case we used a micro SD that came with the Raspberry Pi.
 
 
-
 #### Setting up Myo with Raspberry Pi
 
 #### Myo Interface in Python
@@ -112,7 +88,15 @@ With BalenaEtcher you can flash an OS straight to an external drive, in our case
 
 #### Interface for Light Matrix on Sense Hat
 
+During the project we started by using a sense hat for the raspberry pi which has a 8x8 light matrix.
+
 #### Issues that occurred during the project
+
+#####  Using the light matrix with raspberry pi.
+
+* We originally were using the light matrix on the raspberry pi as a testing tool, in place of using the actual vehicle. This worked but later the sense hat stopped responding and was no longer seen by the program.
+This may be due to some firmware change, or potentially due to a short in device itself. After looking online for similar issues, there is a possible fix for this issue that resets the EPROM on the chip. As we wont be using this within the final project and the light matrix cannot be affixed to the top of the motor controller, since there are no pins in place to addon hats, we stopped trying to fix the issue.
+
 #####  Adding Atom to the raspberry pi.
 We decided to use atom as a compiler due to its ability to code together. It does have windows and Linux support. But due to the fact that our pi is using a arm CPU and the Linux support is only for amd64 architecture. We were unable to install it on the pi. Here is a link to a GitHub account that is trying to create a runnable build for arm it unfortunately doesn't yet have a pi buildable. [Atom for ARM] https://github.com/atom/atom/issues/15881
 
@@ -140,6 +124,11 @@ If you don't or see that Myo is disconnected make sure the Bluetooth dongle is p
 * **Processor** -	ARM Cortex M4 processor
 
 * **Haptic Feedback** -	Short, medium, long vibrations
+
+##### Potential Myo Project
+Our first idea for using the Myo was to use the device as a fall sensor for elderly people or people with physical disabilities. The idea was based on a par written by Shalom Greene, Himanshu Thapliyal and David Carpenter. Titled [IoT-Based Fall Detection for Smart Home Environments](https://www.researchgate.net/publication/312962914_IoT-Based_Fall_Detection_for_Smart_Home_Environments). It covered the benefits of using IoT devices as fall detector and for contacting emergency services in the event of an accident where the person was unable to respond physically or verbally.
+
+We decided against this because the idea of constantly wearing an armband for an elderly or physically disabled person, could cause health risks with blood flow on that arm for the wearer. The idea may be worth revisiting with a wrist worn sensor as many elderly or disabled people wear them already for emergency purposes.  
 
 #### Xbox Kinect Version 1
 ![Kinect1](http://jordanpelovitz.com/wp-content/uploads/2015/04/Xbox-360-Kinect-Standalone.png)
@@ -186,8 +175,11 @@ Kinect 2 specs
 **Latency:** ~60 ms with processing<br/>
 **Tilt Motor:** No tilt motor
 
+##### Potential Kinect and Kinect 2 Project
+
 #### PlayStation Move motion controller
 ![PSMove](https://a1.amlimg.com/YTE2NjIxMmY4NmFmODc5ZGFhNTU5YmU1ZjRkYWM5MmahFiLVOp7WOJ1JtiqNVPzRaHR0cDovL21lZGlhLmFkc2ltZy5jb20vODg2ZTJlMjI2ZDFmZmZkMGY5M2U1NmYwNTkyMTFkNTE5MTdiODkxY2IyN2RjOGU4OTczMGU1NzVkNjBkODdiMi5qcGd8fHx8fHwzOTZ4MjkyfGh0dHA6Ly93d3cuYWR2ZXJ0cy5pZS9zdGF0aWMvaS93YXRlcm1hcmsucG5nfHx8.jpg)<br/>
+
 **PlayStation® Move motion controller**<br/>
 Three-axis gyroscope<br/>
 Three-axis accelerometer<br/>
@@ -206,6 +198,9 @@ Built-in four-capsule microphone array<br/>
 Echo cancellation<br/>
 Background noise suppression<br/>
 
+##### Potential Playstation Moves Projects
+
+
 ##### Leap motion
 ![Leap Motion](https://i.nextmedia.com.au/Utils/ImageResizer.ashx?n=http%3A%2F%2Fi.nextmedia.com.au%2FNews%2Fleap-motion-review.jpg&w=600&c=0&s=1)
 
@@ -213,6 +208,8 @@ Background noise suppression<br/>
 **Interface** USB<br/>
 **Accuracy** ± 0.00039 in<br/>
 **Performance** 200 reports per second<br/>
+
+##### Potential Leap Projects
 
 
 #### Microsoft HoloLens
@@ -262,10 +259,22 @@ Automatic pupillary distance calibration
 * Mixed reality capture: mixed hologram and physical environment photos and videos
 
 **Compute & Connectivity**
-
 * Qualcomm Snapdragon 850 Compute Platform
 * Microsoft’s proprietary holographic processing unit
 * Bluetooth 5.0
 * USB-C Charging
 <hr/>
+
+##### Potential HoloLens Projects
+
+###### Fishing Tutorial Aid
+
+Fishing training program with HoloLens
+
+Last year as part of a college assignment, I took part in a project to create a UWP program that could be used as a training tool to teach someone how to fly fish by using a fly fishing rod that would have an accelerometer attached to the top of the rod and a raspberry pi attached to the handle of the rod. This would allow the Pi to retrieve the data from the accelerometer and send it over a network and could be visualized in the HoloLens. This would allow the teacher to adapt the training style in a more appropriate way to help the student. the project worked somewhat. The Pi retrieved the data and sent over the network and could be seen in a unity program that could be run in any unity compatible device as long as a compiled build was created. This could be adapted to the HoloLens as a gesture recognition project, where in place of an entire rod, Raspberry pi and accelerometer, the HoloLens could extrapolate the data from the movement that user makes, possibly even go further and monitor the users entire body. This would definitely be a better way to implement that project as there would be less hardware involved and could allow for video playback through the HoloLens cameras. This project could also be done in parts using the Kinect or the leap motion, however it would seem to be a better fit for the HoloLens as the current features of the program also could be implemented.
+
+The reason we haven't chosen this project is due to the level of complexity being very high and less likely to give a result in the short time frame.
+
+
 ### References
+[Titled IoT-Based Fall Detection for Smart Home Environments](https://www.researchgate.net/publication/312962914_IoT-Based_Fall_Detection_for_Smart_Home_Environments)
