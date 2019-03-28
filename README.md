@@ -9,28 +9,28 @@ Due Date: 12th April 2019 (or earlier is acceptable)
 
 Develop an application with a Natural User Interface.  There are a number of options available to you and this is an opportunity to combine a lot of technology that you have worked with over the past four years.
 
-At the very least, this should be a local implementation of the application using gestures to interact with it.  For example, a voice controlled application fits the parameters of gesture based control. You can expand out to include real-world hardware and use this as an opportunity to prove a concept.  The Internet of Things is a common phrase, so you could implement a solution taking advantage of hardware like the Raspberry Pi, using the cloudfor data transfer and creating a real-world scenario through this medium.
+At the very least, this should be a local implementation of the application using gestures to interact with it.  For example, a voice controlled application fits the parameters of gesture based control. You can expand out to include real-world hardware and use this as an opportunity to prove a concept.  The Internet of Things is a common phrase, so you could implement a solution taking advantage of hardware like the Raspberry Pi, using the cloud for data transfer and creating a real-world scenario through this medium.
 
-  You can reproducea classic game or system using a gesture-based interface.  For example, a platformer game or a navigation application using Kinect or voice control.  Maybe Tetris using the Myo armbands to control the blocks, or Flappy Bird using the Kinect as the controller.  Applications with multiple users are also acceptable.Voice control applications need to be more complex and achieve something.  Creating a skill in Alexa for the sake of creating a skill is not enough.  You need to take the application further than this.  You could, for example, implement a simple learning mechanism that will build a conversational skill as time progresses and demonstrate this.  You could use the voice control to progress through a game or achieve a task.  If you are doing this, then you need to distinguish the code you write from the samples available.The programming language is your choice.
+  You can reproduce a classic game or system using a gesture-based interface.  For example, a platformer game or a navigation application using Kinect or voice control.  Maybe Tetris using the Myo armbands to control the blocks, or Flappy Bird using the Kinect as the controller.  Applications with multiple users are also acceptable. Voice control applications need to be more complex and achieve something.  Creating a skill in Alexa for the sake of creating a skill is not enough.  You need to take the application further than this.  You could, for example, implement a simple learning mechanism that will build a conversational skill as time progresses and demonstrate this.  You could use the voice control to progress through a game or achieve a task.  If you are doing this, then you need to distinguish the code you write from the samples available. The programming language is your choice.
 
 #### Hardware available
   * (9) Myo Armbands
   * (2) Leap Motion Controllers,
   * (2) Kinect V2,
-  * (2) Hololens,
+  * (2) HoloLens,
   * (6) Durovis Dive which are similar to Google Cardboard
   * Raspberry Pi, Arduino,
   * Lego Mindstorms
-  * (open to you)Other stuff you may have.........
+
 
 #### Requirements
-Write up the project under the following headings including all references as evidence of your research.Purpose of the application–design of the application including the screens of the user interface and how it works.  The application can be an experimentation process for you, testing how pieces of hardware could interact or be combined with gestures.  
+Write up the project under the following headings including all references as evidence of your research. Purpose of the application–design of the application including the screens of the user interface and how it works.  The application can be an experimentation process for you, testing how pieces of hardware could interact or be combined with gestures.  
 
-You don’t have to solve the world economic crisis just yet.  Gestures identified as appropriate for this application–consider how gestures can be incorporated into the application, providinga justification for the ones that you pick.
+You don’t have to solve the world economic crisis just yet.  Gestures identified as appropriate for this application–consider how gestures can be incorporated into the application, providing a justification for the ones that you pick.
 
- This is an important research element for the project and needs to explain how the gestures fit into the solution you are creating.Hardware used in creating the application–You are not limited to the hardware listed above.  If you have your own hardware, or hardware simulator that you wish to use, then feel free.  The purpose of each piece of hardware should be given with a comparison to other options available.Architecture for the solution–the full architecture for the solution, including the class diagrams, any data models, communications and distributed elements that you are creating.
+ This is an important research element for the project and needs to explain how the gestures fit into the solution you are creating. Hardware used in creating the application–You are not limited to the hardware listed above.  If you have your own hardware, or hardware simulator that you wish to use, then feel free.  The purpose of each piece of hardware should be given with a comparison to other options available. Architecture for the solution–the full architecture for the solution, including the class diagrams, any data models, communications and distributed elements that you are creating.
 
- The architecture must make sense when the gestures and the hardware are combined. Justification is necessary in the documentation for this.You need to include a list of relevant libraries that you used in the project.Conclusions & Recommendations–Conclusions are what you have learned from this project and the associated research.  Recommendations are what you would do differently if you were to undertake the project again.  The Reflective Piece–what I learned and “enjoyed”! This gives scope for a critical evaluation of the project and the objective that you tried to achieve
+ The architecture must make sense when the gestures and the hardware are combined. Justification is necessary in the documentation for this. You need to include a list of relevant libraries that you used in the project. Conclusions & Recommendations–Conclusions are what you have learned from this project and the associated research.  Recommendations are what you would do differently if you were to undertake the project again.  The Reflective Piece–what I learned and “enjoyed”! This gives scope for a critical evaluation of the project and the objective that you tried to achieve
 
 ### Project Overview
 <hr/>
@@ -41,17 +41,17 @@ We have decided to Attempt to control a robotic car with a Myo Armband, this wou
 For the Project we will need a small vehicle that can connect in some manner to a mini programmable computer such as the raspberry pi.
 The vehicle will need to have DC motors and if possible 4 or more wheels, which can be rotated from those motors.
 
-We will be using a raspberry pi with an external power source, such as the batteries attached to the car or another extenal power pack designed to be used for phones with a micro USB port.
+We will be using a raspberry pi with an external power source, such as the batteries attached to the car or another external power pack designed to be used for phones with a micro USB port.
 
 On the Raspberry Pi we will install the Raspbian Operating system, Previously I have used a Raspberry Pi with the windows IOT operating system, but found that the Pi struggle somewhat with processing.
 
 Raspbian will allow us to use Python as a programming language and unlike the windows version, can come with a full desktop GUI install.
 
 #### Gestures
-* Make a Fist - This will accelerate the vehcile Forward.
+* Make a Fist - This will accelerate the vehicle Forward.
 * Wave Out (Eg. Stop motion) - This will make the car reverse.
-* Rest hand - This will stop the motors, bring the vehicle to a stop but also will reset the box positioning for the Myo Armaband.
-* Make a fist and move Arm to box position 7 - This will turn the vechicle to the right
+* Rest hand - This will stop the motors, bring the vehicle to a stop but also will reset the box positioning for the Myo Armband.
+* Make a fist and move Arm to box position 7 - This will turn the vehicle to the right
 * Make a fist and move Arm to box position 3 - This will move the vehicle left.  
 
 #### Video Demonstration
@@ -91,14 +91,14 @@ Other Video
 
 To get started, you will need a Raspberry pi running some form of Operating System. For our project we used Raspbian, which is a compact Debian derivative designed to be used with small hardware like the Raspberry pi 3.
 
-Download Rasbian OS
+Download Raspbian OS
 [Here](https://www.raspberrypi.org/downloads/raspbian/)
 
-Once you have Rasbian Downloaded, You will need to install it to a micro SD card that can be inserted into the raspberry pi. To do this with windows I used a program called BelenaEtcher, this can also be used with a Linux OS.
+Once you have Raspbian Downloaded, You will need to install it to a micro SD card that can be inserted into the raspberry pi. To do this with windows I used a program called BelenaEtcher, this can also be used with a Linux OS.
 
 Download BalenaEtcher [Here](https://www.balena.io/etcher/)
 
-With BalenaEtcher you can flash an OS straight to an external drive, in our case we used a mirco SD that came with the Rapberry Pi.
+With BalenaEtcher you can flash an OS straight to an external drive, in our case we used a micro SD that came with the Raspberry Pi.
 
 
 
@@ -112,9 +112,9 @@ With BalenaEtcher you can flash an OS straight to an external drive, in our case
 
 #### Interface for Light Matrix on Sense Hat
 
-#### Issues that occured during the project
-#####  Adding Atom to the rasperry pi. 
-We decided to use atom as a compiler due to its ability to code together. It does have windows and linux support. But due to the fact that our pi is using a armhf and the linux support is only for amd64 architecture. We were unable to install it on the pi. Here is a link to a github account thaat is trying to create a runnable build for arm it unfortunatley doesnt yet have a pi buildable. [Atom for ARM] https://github.com/atom/atom/issues/15881
+#### Issues that occurred during the project
+#####  Adding Atom to the raspberry pi.
+We decided to use atom as a compiler due to its ability to code together. It does have windows and Linux support. But due to the fact that our pi is using a arm CPU and the Linux support is only for amd64 architecture. We were unable to install it on the pi. Here is a link to a GitHub account that is trying to create a runnable build for arm it unfortunately doesn't yet have a pi buildable. [Atom for ARM] https://github.com/atom/atom/issues/15881
 
 
 <hr/>
@@ -125,11 +125,11 @@ We decided to use atom as a compiler due to its ability to code together. It doe
 ![Myo](https://images.techhive.com/images/article/2015/06/thalmic-labs-myo-armband-100590953-primary.idge.jpg)
 
 ##### Installing Myo Armband On Windows
-First you will need to download the Myo Installed from the Myo install page [Here](https://support.getmyo.com/hc/en-us/articles/360018409792) 
+First you will need to download the Myo Installed from the Myo install page [Here](https://support.getmyo.com/hc/en-us/articles/360018409792)
 ![MyoInstallPage](https://user-images.githubusercontent.com/22493191/54996439-37811680-4fc1-11e9-8041-bdcce471abb8.png)
-Then click on Myo Connect for Windows 1.0.1 after it downloads. Double click on the file. Agree to the license agreement and then choose where to install. The default location is okay to use (it will require 137.3mb of free space). Wait for it to install. Make sure that launch Myo Connect is ticked. Then click on finish. You should then see this screen. 
-![MyoArmbandManger](https://user-images.githubusercontent.com/22493191/54997131-effb8a00-4fc2-11e9-994e-71f5cf0addaa.png) 
-If you dont or see that Myo is diconnected make sure the bluetooth dongle is plugged in to a powered usb port. Then tap the logo of the myo armband against the dongle and it should start connecting. When connected you can ping the device and you should feel it vibrate to know its connected. 
+Then click on Myo Connect for Windows 1.0.1 after it downloads. Double click on the file. Agree to the license agreement and then choose where to install. The default location is okay to use (it will require 137.3mb of free space). Wait for it to install. Make sure that launch Myo Connect is ticked. Then click on finish. You should then see this screen.
+![MyoArmbandManger](https://user-images.githubusercontent.com/22493191/54997131-effb8a00-4fc2-11e9-994e-71f5cf0addaa.png)
+If you don't or see that Myo is disconnected make sure the Bluetooth dongle is plugged in to a poweredUSB port. Then tap the logo of the MYO armband against the dongle and it should start connecting. When connected you can ping the device and you should feel it vibrate to know its connected.
 
 **Sensors** 	
 
@@ -188,15 +188,15 @@ Kinect 2 specs
 
 #### PlayStation Move motion controller
 ![PSMove](https://a1.amlimg.com/YTE2NjIxMmY4NmFmODc5ZGFhNTU5YmU1ZjRkYWM5MmahFiLVOp7WOJ1JtiqNVPzRaHR0cDovL21lZGlhLmFkc2ltZy5jb20vODg2ZTJlMjI2ZDFmZmZkMGY5M2U1NmYwNTkyMTFkNTE5MTdiODkxY2IyN2RjOGU4OTczMGU1NzVkNjBkODdiMi5qcGd8fHx8fHwzOTZ4MjkyfGh0dHA6Ly93d3cuYWR2ZXJ0cy5pZS9zdGF0aWMvaS93YXRlcm1hcmsucG5nfHx8.jpg)<br/>
-**PlayStation®Move motion controller**<br/>
+**PlayStation® Move motion controller**<br/>
 Three-axis gyroscope<br/>
 Three-axis accelerometer<br/>
-Terrestrial megnetic field sensor<br/>
-Colour-changing sphere for Playstation Eye tracking<br/>
+Terrestrial magnetic field sensor<br/>
+Colour-changing sphere for PlayStation Eye tracking<br/>
 Bluetooth® technology<br/>
 Vibration feedback
 
-**PlayStation®Move sub-controller**<br/>
+**PlayStation® Move sub-controller**<br/>
 Built-in lithium-ion rechargeable battery<br/>
 Bluetooth® technology<br/>
 2 DUALSHOCK® or SIXAXIS® Wireless Controller replacement capability.<br/>
@@ -215,7 +215,7 @@ Background noise suppression<br/>
 **Performance** 200 reports per second<br/>
 
 
-#### Microsoft Hololens
+#### Microsoft HoloLens
 ![Hololens](https://cdn-images-1.medium.com/max/1600/1*Oltg1ajoJ1Xbs2fK0N644g.jpeg)
 
 **Display** 	See-through holographic lenses (waveguides)
@@ -234,13 +234,13 @@ Automatic pupillary distance calibration
 **OS** 	Windows 10 with Windows Store<br/>
 **Human Understanding:** spatial sound, gaze tracking, gesture input, voice support<br/>
 
-#### Microsoft Hololens 2
+#### Microsoft HoloLens 2
 ![Hololens2](https://cdn.uploadvr.com/wp-content/uploads/2019/02/HoloLens-2-MWC-1024x597.jpg)
 **Display**
 
 * **Optics:** See-through holographic lenses (waveguides)
 * **Resolution:** 2K 3:2 light engines
-* **Holographic Density:** >2.5k radiants (light points per radian)
+* **Holographic Density:** >2.5k radiant (light points per radian)
 * **Eye-based rendering:** Display optimization for 3D eye position
 
 **Sensors**
@@ -265,7 +265,7 @@ Automatic pupillary distance calibration
 
 * Qualcomm Snapdragon 850 Compute Platform
 * Microsoft’s proprietary holographic processing unit
-* BlueTooth 5.0
+* Bluetooth 5.0
 * USB-C Charging
 <hr/>
 ### References
