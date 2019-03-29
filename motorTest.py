@@ -11,10 +11,6 @@
 import robohat, time
 
 speed = 80
-print "Tests the motors at speed = 80%"
-print "Forward, Reverse, Spin Right, Spin Left, Stop, then repeat"
-print "Press Ctrl-C to stop"
-print
 
 robohat.init()
 
@@ -22,19 +18,19 @@ robohat.init()
 try:
     while True:
         robohat.forward(speed)
-        print 'Forward'
+        print ('Forward')
         time.sleep(3)
         robohat.reverse(speed)
-        print 'Reverse'
+        print ('Reverse')
         time.sleep(3)
         robohat.spinRight(speed)
-        print 'Spin Right'
+        print ('Spin Right')
         time.sleep(3)
         robohat.spinLeft(speed)
-        print 'Spin Left'
+        print ('Spin Left')
         time.sleep(3)
         robohat.stop()
-        print 'Stop'
+        print ('Stop')
         time.sleep(3)
 
 except KeyboardInterrupt:

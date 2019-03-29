@@ -10,6 +10,8 @@ import time
 import serial
 from serial.tools.list_ports import comports
 
+import robohat
+
 from myo_raw import BT, MyoRaw
 from PyoConnect import *
 
@@ -17,35 +19,35 @@ from PyoConnect import *
 def onPoseEdge(p):
 
 	if p == p.REST:
+		robohat.stop()
 		myo.rotSetCenter()
-		print("MYO REST")
 	if p == p.FIST:
 		if myo.getBox() == 7:
-			myo.vibrate(3)
-			print("MYO Left?")
+			turnForward(0, speed):
 		elif myo.getBox() == 3:
-			myo.vibrate(4)
-			print("MYO Right?")
+			turnForward(speed, 0):
 		else:
-			print("else")
-			myo.vibrate(2)
+			robohat.forward(speed)
 	if p == p.WAVE_OUT:
-		print("WAVE_OUT")
-		myo.vibrate(1)
+		robohat.spinRight(speed)
+	if p == p.WAVE_IN:
+		robohat.spinLeft(speed)
+	if p == p.FINGERS_SPREAD:
+		robohat.reverse(speed)
 
 
 if __name__ == '__main__':
 
 	# Connect the myo armband
 	myo = Myo(sys.argv[1] if len(sys.argv) >= 2 else None) 
-	print("MYo Connected")
+
+	speed = 40
 	myo.connect()
-	print("MYo Connect 2")
+	robohat.init()
 	# arm handler, left and right arms
 	# also handles the direction, either facing elbow or wrist
 	# myo.add_arm_handler(lambda arm, xdir: print('arm', arm, 'xdir', xdir))
 	myo.add_pose_handler(lambda p: onPoseEdge(p))
-	print("MYo Connect 3")
 	while True:
 		# keep the Myo active
 		myo.run()

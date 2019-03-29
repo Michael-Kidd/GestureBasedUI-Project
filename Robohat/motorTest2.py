@@ -42,12 +42,6 @@ def readkey(getchar_fn=None):
 
 speed = 60
 
-print "Tests the motors by using the arrow keys to control"
-print "Use , or < to slow down"
-print "Use . or > to speed up"
-print "Speed changes take effect when the next arrow key is pressed"
-print "Press Ctrl-C to end"
-print
 
 robohat.init()
 
@@ -57,25 +51,25 @@ try:
         keyp = readkey()
         if keyp == 'w' or ord(keyp) == 16:
             robohat.forward(speed)
-            print 'Forward', speed
+            print ('Forward', speed)
         elif keyp == 'z' or ord(keyp) == 17:
             robohat.reverse(speed)
-            print 'Reverse', speed
+            print ('Reverse', speed)
         elif keyp == 's' or ord(keyp) == 18:
             robohat.spinRight(speed)
-            print 'Spin Right', speed
+            print ('Spin Right', speed)
         elif keyp == 'a' or ord(keyp) == 19:
             robohat.spinLeft(speed)
-            print 'Spin Left', speed
+            print ('Spin Left', speed)
         elif keyp == '.' or keyp == '>':
             speed = min(100, speed+10)
-            print 'Speed+', speed
+            print ('Speed+', speed)
         elif keyp == ',' or keyp == '<':
             speed = max (0, speed-10)
-            print 'Speed-', speed
+            print ('Speed-', speed)
         elif keyp == ' ':
             robohat.stop()
-            print 'Stop'
+            print ('Stop')
         elif ord(keyp) == 3:
             break
 
