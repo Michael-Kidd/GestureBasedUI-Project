@@ -23,9 +23,9 @@ def onPoseEdge(p):
 		myo.rotSetCenter()
 	if p == p.FIST:
 		if myo.getBox() == 7:
-			turnForward(0, speed):
+			robohat.turnForward(0, speed)
 		elif myo.getBox() == 3:
-			turnForward(speed, 0):
+			robohat.turnForward(speed, 0)
 		else:
 			robohat.forward(speed)
 	if p == p.WAVE_OUT:
