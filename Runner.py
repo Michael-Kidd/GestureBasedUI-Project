@@ -19,29 +19,40 @@ from PyoConnect import *
 def onPoseEdge(p):
 
 	if p == p.REST:
+		#print("Rest")
 		robohat.stop()
 		myo.rotSetCenter()
-	if p == p.FIST:
-		if myo.getBox() == 7:
-			robohat.turnForward(0, speed)
-		elif myo.getBox() == 3:
-			robohat.turnForward(speed, 0)
-		else:
-			robohat.forward(speed)
-	if p == p.WAVE_OUT:
+		#robohat.cleanup()
+	elif p == p.FIST:
+		#print("Fist")
+		#if myo.getBox() == 7:
+		#	print("Turn Left")
+		#	robohat.turnForward(0, speed)
+		#elif myo.getBox() == 3:
+		#	print("Turn Right")
+		#	robohat.turnForward(speed, 0)
+		#else:
+		#print("forward")
+		robohat.forward(speed)
+	elif p == p.WAVE_OUT:
+		#print("Spin Right")
 		robohat.spinRight(speed)
-	if p == p.WAVE_IN:
+		myo.rotSetCenter()
+	elif p == p.WAVE_IN:
+		#print("Spin Left")
 		robohat.spinLeft(speed)
-	if p == p.FINGERS_SPREAD:
+		myo.rotSetCenter()
+	elif p == p.FINGERS_SPREAD:
+		#print("Reverse")
 		robohat.reverse(speed)
-
+		myo.rotSetCenter()
 
 if __name__ == '__main__':
 
 	# Connect the myo armband
 	myo = Myo(sys.argv[1] if len(sys.argv) >= 2 else None) 
 
-	speed = 40
+	speed = 80
 	myo.connect()
 	robohat.init()
 	# arm handler, left and right arms
