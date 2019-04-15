@@ -37,8 +37,6 @@ Raspbian will allow us to use Python as a programming language and unlike the wi
 Project Demonstration - Finished Project
 [![Youtube Video](https://img.youtube.com/vi/w5ymBcMpCew/maxresdefault.jpg)](https://www.youtube.com/watch?v=w5ymBcMpCew)
 
-Other Video
-[![Youtube Video](https://static-news.moneycontrol.com/static-mcnews/2018/09/youtube-770x433.jpg)](http://example.net/)
 
 
 <hr/>
@@ -55,19 +53,17 @@ Once you have Raspbian Downloaded, You will need to install it to a micro SD car
 
 #### Installing BalenaEtcher on Windows
 
-
-
 Download BalenaEtcher [Here](https://www.balena.io/etcher/)
 
 With BalenaEtcher you can flash an OS straight to an external drive, in our case we used a micro SD that came with the Raspberry Pi.
 
 #### Installing Raspbian on to MicroSD
 
-
+![blanEtcher](https://user-images.githubusercontent.com/22493191/56132853-f3ab7c80-5f82-11e9-975b-e554f0857125.gif)
+Using BalenaEtcher you will first select the image in our case the Raspbian image. Then you will select the drive, for us it was the micro SD card and then finally you click flash. 
 
 #### Setting up Myo with Raspberry Pi
-
-#### Myo Interface in Python
+As MyoConnect is designed for Windows to use the Myo with Raspbian (a linux system) we had to find an alternative. We chose  PyoConnect which is a linux alternative to what MyoConnect scripting does for windows. The installation is a simple enough process just follow the steps [here](http://www.fernandocosentino.net/pyoconnect/) and you can start writing code. 
 
 #### Wiring the Car to work with Pi
 
@@ -267,3 +263,4 @@ The reason we haven't chosen this project is due to the level of complexity bein
 ### References
 [Endless Runner Kinect](https://github.com/KatVHarris/GravityInfiniteRunnerUnity5)<br>
 [Titled IoT-Based Fall Detection for Smart Home Environments](https://www.researchgate.net/publication/312962914_IoT-Based_Fall_Detection_for_Smart_Home_Environments)<br>
+[PyoConnect](http://www.fernandocosentino.net/pyoconnect/)<br>
