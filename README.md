@@ -88,6 +88,7 @@ We decided to use atom as a compiler due to its ability to code together. It doe
 <hr/>
 
 ### Research
+We looked online for some ideas for a Gesture based Project one of the places we found with a lot of good ideas and the steps to build them was [Hackster.io](https://www.hackster.io/projects/tags/gesture).
 
 #### Myo Armband
 ![Myo](https://images.techhive.com/images/article/2015/06/thalmic-labs-myo-armband-100590953-primary.idge.jpg)
@@ -264,3 +265,8 @@ The reason we haven't chosen this project is due to the level of complexity bein
 [Endless Runner Kinect](https://github.com/KatVHarris/GravityInfiniteRunnerUnity5)<br>
 [Titled IoT-Based Fall Detection for Smart Home Environments](https://www.researchgate.net/publication/312962914_IoT-Based_Fall_Detection_for_Smart_Home_Environments)<br>
 [PyoConnect](http://www.fernandocosentino.net/pyoconnect/)<br>
+[Raspbian OS](https://www.raspberrypi.org/downloads/raspbian/)<br>
+[BlanEtcher](https://www.balena.io/etcher/)<br>
+[Atom for ARM](https://github.com/atom/atom/issues/15881)<br>
+[Myo install page](https://support.getmyo.com/hc/en-us/articles/360018409792)<br>
+[ideas For Gesture Projects](https://www.hackster.io/projects/tags/gesture)
