@@ -35,7 +35,7 @@ Raspbian will allow us to use Python as a programming language and unlike the wi
 #### Video Demonstration
 
 Project Demonstration - Finished Project
-[![Youtube Video](https://static-news.moneycontrol.com/static-mcnews/2018/09/youtube-770x433.jpg)](http://example.net/)
+[![Youtube Video](https://img.youtube.com/vi/w5ymBcMpCew/maxresdefault.jpg)](https://www.youtube.com/watch?v=w5ymBcMpCew)
 
 Other Video
 [![Youtube Video](https://static-news.moneycontrol.com/static-mcnews/2018/09/youtube-770x433.jpg)](http://example.net/)
