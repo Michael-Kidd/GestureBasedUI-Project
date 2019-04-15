@@ -67,6 +67,8 @@ As MyoConnect is designed for Windows to use the Myo with Raspbian (a linux syst
 
 #### Wiring the Car to work with Pi
 
+For the wiring section of the project, we attached the Raspberry pi to the top of the 4Tronix Initio car. We then attached a Robohat raspberry pi hat to the pi. The robohat is then connected to the power wires coming from the batterys. The robohat is then connected to the two motors, one motor drives the right track and one motor controls the left track.
+
 #### Interface for Light Matrix on Sense Hat
 
 During the project we started by using a sense hat for the raspberry pi which has a 8x8 light matrix. This would show an arrow on the matrix to indicate which gesture the wearer of the Armband was trying to activate.  Example we had the left arrow show when the wearer activate the left gesture. One problem here was that neither motor controller we were using would be replacing the sense hat as there was no way to attach it to the unit while the motor controllers were also attached without adding an adapter of some sort.
